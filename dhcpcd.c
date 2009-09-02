@@ -659,8 +659,8 @@ main(int argc, char **argv)
 					     VENDORCLASSID_MAX_LEN,
 					     "%s %s", PACKAGE, VERSION);
 
-#ifdef CMDLINE_COMPAT
 	add_option_mask(options->requestmask, DHO_DNSSERVER);
+#ifdef CMDLINE_COMPAT
 	add_option_mask(options->requestmask, DHO_DNSDOMAIN);
 	add_option_mask(options->requestmask, DHO_DNSSEARCH);
 	add_option_mask(options->requestmask, DHO_NISSERVER);
